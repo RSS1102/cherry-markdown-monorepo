@@ -1,0 +1,20 @@
+{
+  "name": "cherry-markdown",
+  "license": "Apache-2.0",
+  "version": "0.0.1",
+  "description": "a new markdown editor",
+  "scripts": {},
+  "keywords": [
+    "markdown"
+  ],
+  "author": "Cherry Oteam",
+  "devDependencies": {
+    "cherry-markdown": "workspace:*"
+  },
+  "resolutions": {},
+  "config": {
+    "commitizen": {}
+  },
+  "optionalDependencies": {},
+  "lint-staged": {}
+}
