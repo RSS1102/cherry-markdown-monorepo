@@ -7,7 +7,7 @@ src/sass/**
 **/*.css
 src/libs/*.js
 example-applications/**
-examples/**
-client
-vscodePlugin
-docs/**
+packages/examples/**
+packages/client/**
+packages/vscodePlugin/**
+packages/docs/**
