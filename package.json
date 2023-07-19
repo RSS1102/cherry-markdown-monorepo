@@ -8,9 +8,7 @@
     "markdown"
   ],
   "author": "Cherry Oteam",
-  "devDependencies": {
-    "cherry-markdown": "workspace:*"
-  },
+  "devDependencies": {},
   "resolutions": {},
   "config": {
     "commitizen": {}
