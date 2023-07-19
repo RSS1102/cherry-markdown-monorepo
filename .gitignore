@@ -22,10 +22,13 @@ yarn-error.log*
 
 # Lock files
 package-lock.json
-# pnpm-lock.yaml
-yarn.lock
+pnpm-lock.yaml
 
 #client
 /client/dist-electron
 /client/dist
 /client/release
+
+# docs
+/docs/.vitepress/cache/
+/docs/.vitepress/dist/
