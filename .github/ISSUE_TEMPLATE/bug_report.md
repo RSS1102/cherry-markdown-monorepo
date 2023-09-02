@@ -1,32 +1,51 @@
----
-name: Bug report
-about: Create a report to help us improve
-title: '[Bug report]'
-labels: ''
-assignees: ''
-
----
-
-**Describe the bug**
-A clear and concise description of what the bug is.
-
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
-
-**Expected behavior**
-A clear and concise description of what you expected to happen.
-
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
-**Environment (please complete the following information):**
- - OS: [e.g. Windows/macOS]
- - Browser [e.g. Chrome, Safari]
- - Version [e.g. 0.5.14]
-
-**Additional context**
-Add any other context about the problem here.
+name: 🐞 Bug report
+description: Report an issue
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is.
+      placeholder: Bug description
+    validations:
+      required: true
+  - type: input
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: A [minimal reproduction](https://stackoverflow.com/help/minimal-reproducible-example) is **required**,It is beneficial for solving your problem faster and better.
+      placeholder: Reproduction
+    validations:
+      required: true
+  - type: textarea
+    id: system-info
+    attributes:
+      label: System Info
+      description: Output of `npx envinfo --system --binaries --browsers`
+      render: Shell
+      placeholder: System, Binaries, Browsers
+    validations:
+      required: true
+  - type: checkboxes
+    id: checkboxes
+    attributes:
+      label: Validations
+      description: Before submitting the issue, please make sure you do the following
+      options:
+        - label: Check that there isn't already an issue that reports the same bug to avoid creating a duplicate.
+          required: true
+        - label: Check that this is a concrete bug. For Q&A, please open a [GitHub Discussion](https://github.com/Tencent/cherry-markdown/discussions) instead.
+          required: true
+        - label: The provided reproduction is a [minimal reproducible](https://stackoverflow.com/help/minimal-reproducible-example) of the bug.
+          required: true
+  - type: checkboxes
+    id: help-us
+    attributes:
+      label: Help us
+      description: Do you plan to submit a PR for this issue? 
+      options:
+        - label:I would like to try submitting a PR for this issue.
