@@ -1,5 +1,6 @@
 name: 🐞 Bug report
 description: Report an issue
+labe:'[Bug report]'
 body:
   - type: markdown
     attributes:
