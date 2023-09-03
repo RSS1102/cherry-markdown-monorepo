@@ -1,5 +1,7 @@
 name: 🚀 New feature proposal
 description: Propose a new feature
+title: '[feature report]'
+labels: ''
 body:
   - type: markdown
     attributes:
